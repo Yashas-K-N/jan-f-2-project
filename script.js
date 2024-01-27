@@ -1,15 +1,16 @@
-let topics_div=document.getElementsByClassName("topics");
+let topics_div=document.getElementById("topics");
 console.log(topics);
-
+let selected_topics=[];
 let grand_topic_list=[
     "Tag Badge",
-    "Tag Badge "
+    "Tag Badge",
+    "hi"
 ];
 
 function display_topics(){
     grand_topic_list.map(topic=>{
-        let newtopicElement=document.create("div");
-        newtopicElement.classlist.add("topic");
+        let newtopicElement=document.createElement("div");
+        newtopicElement.classList.add("topic");
         newtopicElement.innerText=topic;
         newtopicElement.addEventListener("click",()=>{
           if(!selected_topics.includes(newtopicElement.innerText)){
