@@ -1,0 +1,31 @@
+*{
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: antiquewhite;
+}
+ul:nth-child(4){
+    color: yellow;
+    border: solid 2px yellow;
+}
+
+ .pos ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    
+    
+    
+
+}
+
+ .pos {
+    position:sticky;
+    top:0px;
+    z-index:1;
+    
+}
